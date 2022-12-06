@@ -49,7 +49,7 @@ type LocalControl struct {
 
 // distributor divides the work between workers and interacts with other goroutines.
 func distributor(p Params, c distributorChannels) {
-	worker, err := rpc.Dial("tcp", "3.92.181.45:8081")
+	worker, err := rpc.Dial("tcp", "3.83.23.107:8081")
 	if err != nil {
 		panic(err)
 	}
